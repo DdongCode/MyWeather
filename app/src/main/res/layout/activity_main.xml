@@ -11,23 +11,36 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true">
+
         <ImageView
+            android:id="@+id/main_iv_add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:src="@mipmap/add"
-            />
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:src="@mipmap/add" />
 
-        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/main_layout_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+        </LinearLayout>
         <ImageView
+            android:id="@+id/main_iv_more"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:src="@mipmap/elipsis"
-            />
+            android:src="@mipmap/elipsis" />
 
     </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_ip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom_layout">
+
+    </androidx.viewpager.widget.ViewPager>
 </RelativeLayout>
